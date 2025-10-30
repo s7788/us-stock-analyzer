@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股分析系統 - US Stock Analyzer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🇺🇸 美股價格分析系統</h1>
+            <p class="subtitle">即時股價位階分析與投資建議</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 今日推薦區 -->
+        <section class="recommendations-section">
+            <h2>📈 今日推薦買入</h2>
+            <div id="daily-recommendations" class="recommendations-grid">
+                <!-- 推薦內容由 JS 動態載入 -->
+            </div>
+        </section>
+
+        <!-- 過濾器區 -->
+        <section class="filter-section">
+            <h2>🔍 篩選條件</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label>產業類別：</label>
+                    <div class="filter-buttons" id="category-filters">
+                        <button class="filter-btn active" data-category="all">全部</button>
+                        <button class="filter-btn" data-category="Technology">科技</button>
+                        <button class="filter-btn" data-category="Healthcare">醫療</button>
+                        <button class="filter-btn" data-category="Finance">金融</button>
+                        <button class="filter-btn" data-category="Consumer">消費</button>
+                        <button class="filter-btn" data-category="Energy">能源</button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label>價格位階：</label>
+                    <div class="filter-buttons" id="level-filters">
+                        <button class="filter-btn active" data-level="all">全部</button>
+                        <button class="filter-btn low" data-level="低位階">低位階</button>
+                        <button class="filter-btn medium" data-level="中位階">中位階</button>
+                        <button class="filter-btn high" data-level="高位階">高位階</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 股票列表區 -->
+        <section class="stocks-section">
+            <h2>📊 股票分析列表</h2>
+            <div class="stats-bar">
+                <span>顯示 <strong id="displayed-count">0</strong> / <strong id="total-count">0</strong> 支股票</span>
+            </div>
+            <div id="stocks-grid" class="stocks-grid">
+                <!-- 股票卡片由 JS 動態載入 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>⚠️ 投資有風險，本系統僅供參考，不構成投資建議</p>
+            <p>數據更新時間：<span id="last-update"></span></p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/stockAnalysis.js"></script>
+    <script src="js/filterSystem.js"></script>
+    <script src="js/recommendations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
