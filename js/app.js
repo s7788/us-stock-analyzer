@@ -115,6 +115,13 @@ const stockData = [
 // Global state
 let filteredStocks = [...stockData];
 
+// Price level text mapping
+const PRICE_LEVEL_TEXT = {
+    'low': '低位階',
+    'medium': '中位階',
+    'high': '高位階'
+};
+
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
     initializeFilters();
@@ -210,12 +217,6 @@ function createStockCard(stock) {
     const card = document.createElement('div');
     card.className = 'stock-card';
     
-    const levelText = {
-        'low': '低位階',
-        'medium': '中位階',
-        'high': '高位階'
-    };
-    
     card.innerHTML = `
         <div class="stock-header">
             <div class="stock-symbol">${stock.symbol}</div>
@@ -223,10 +224,10 @@ function createStockCard(stock) {
         </div>
         <div class="stock-price">$${stock.price.toFixed(2)}</div>
         <div class="price-level level-${stock.priceLevel}">
-            ${levelText[stock.priceLevel]}
+            ${PRICE_LEVEL_TEXT[stock.priceLevel]}
         </div>
         <div class="stock-reason">
-            <strong>分析：</strong>${stock.reason}
+            <strong>分析：</strong> ${stock.reason}
         </div>
     `;
     

@@ -1,5 +1,10 @@
 /* US Stock Analyzer Styles */
 
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -61,7 +66,7 @@ h1 {
 
 .filter-group select:hover,
 .filter-group select:focus {
-    border-color: #667eea;
+    border-color: var(--primary-color);
     outline: none;
 }
 
@@ -108,7 +113,7 @@ main {
 }
 
 .stock-category {
-    background: #667eea;
+    background: var(--primary-color);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -172,7 +177,7 @@ main {
     margin-bottom: 20px;
     font-size: 1.8em;
     text-align: center;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid var(--primary-color);
     padding-bottom: 10px;
 }
 
@@ -183,7 +188,7 @@ main {
 }
 
 .recommendation-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
     border-radius: 10px;
     padding: 20px;
