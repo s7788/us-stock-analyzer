@@ -5,7 +5,7 @@ const stockData = [
     {
         symbol: 'AAPL',
         name: 'Apple Inc.',
-        price: 178.50,
+        price: 268.81,
         category: '科技',
         priceLevel: 'medium',
         reason: '當前股價處於中位階，技術面顯示MACD金叉，但RSI接近70，顯示有些過熱。基本面支撐強勁，建議等待回調後買入。',
@@ -14,7 +14,7 @@ const stockData = [
     {
         symbol: 'MSFT',
         name: 'Microsoft Corporation',
-        price: 378.25,
+        price: 520.56,
         category: '科技',
         priceLevel: 'low',
         reason: '股價處於低位階，相對歷史高點回調約15%。雲端業務持續增長，AI投資有望帶來長期收益。技術面顯示超賣，適合中長期投資者進場。',
@@ -23,7 +23,7 @@ const stockData = [
     {
         symbol: 'GOOGL',
         name: 'Alphabet Inc.',
-        price: 142.50,
+        price: 253.08,
         category: '科技',
         priceLevel: 'low',
         reason: '目前處於低位階，PE比率相對科技股偏低。搜尋引擎主導地位穩固，雲端業務快速成長。技術面出現築底訊號，適合分批進場。',
@@ -32,7 +32,7 @@ const stockData = [
     {
         symbol: 'AMZN',
         name: 'Amazon.com Inc.',
-        price: 156.80,
+        price: 227.65,
         category: '電商',
         priceLevel: 'medium',
         reason: '股價處於中位階，電商業務穩定，AWS雲端服務持續貢獻利潤。近期財報表現符合預期，但市場對消費支出有所顧慮。',
@@ -41,7 +41,7 @@ const stockData = [
     {
         symbol: 'TSLA',
         name: 'Tesla Inc.',
-        price: 248.50,
+        price: 448.98,
         category: '汽車',
         priceLevel: 'high',
         reason: '股價處於高位階，本益比超過60倍。雖然電動車交付量增長，但競爭加劇。技術面顯示超買，短期獲利了結壓力大，建議觀望。',
@@ -50,7 +50,7 @@ const stockData = [
     {
         symbol: 'NVDA',
         name: 'NVIDIA Corporation',
-        price: 485.50,
+        price: 182.16,
         category: '科技',
         priceLevel: 'high',
         reason: '股價處於高位階，受惠AI熱潮大漲。雖然基本面強勁，但估值偏高，短期存在回調風險。適合已持有者分批獲利了結。',
@@ -59,7 +59,7 @@ const stockData = [
     {
         symbol: 'JPM',
         name: 'JPMorgan Chase & Co.',
-        price: 158.75,
+        price: 300.27,
         category: '金融',
         priceLevel: 'low',
         reason: '銀行股處於低位階，利率環境有利於淨利息收入。資產品質良好，股息收益率吸引人。技術面顯示支撐強勁，適合價值投資者。',
@@ -68,7 +68,7 @@ const stockData = [
     {
         symbol: 'JNJ',
         name: 'Johnson & Johnson',
-        price: 162.30,
+        price: 186.89,
         category: '醫療',
         priceLevel: 'low',
         reason: '防禦型股票處於低位階，股息穩定且持續增長。受藥品專利到期影響，但新藥研發管線充足。適合尋求穩定收益的投資者。',
@@ -77,7 +77,7 @@ const stockData = [
     {
         symbol: 'V',
         name: 'Visa Inc.',
-        price: 265.40,
+        price: 347.23,
         category: '金融',
         priceLevel: 'medium',
         reason: '股價處於中位階，全球支付業務穩健增長。數位支付趨勢持續，但面臨競爭加劇。基本面良好，可等待更好的買點。',
@@ -86,7 +86,7 @@ const stockData = [
     {
         symbol: 'WMT',
         name: 'Walmart Inc.',
-        price: 168.90,
+        price: 103.18,
         category: '零售',
         priceLevel: 'medium',
         reason: '零售龍頭股價處於中位階，受惠消費韌性。電商業務快速成長，但利潤率面臨壓力。適合保守投資者配置的防禦性股票。',
@@ -95,7 +95,7 @@ const stockData = [
     {
         symbol: 'DIS',
         name: 'The Walt Disney Company',
-        price: 95.80,
+        price: 111.67,
         category: '娛樂',
         priceLevel: 'low',
         reason: '股價處於低位階，Disney+串流業務轉虧為盈。主題樂園營收強勁恢復，內容創作能力無可比擬。估值吸引，適合長期布局。',
@@ -104,7 +104,7 @@ const stockData = [
     {
         symbol: 'BA',
         name: 'The Boeing Company',
-        price: 185.60,
+        price: 223.29,
         category: '航空',
         priceLevel: 'high',
         reason: '股價處於高位階，雖然訂單回升但生產問題頻傳。財務壓力較大，不確定性高。建議觀望等待更明確的轉機訊號。',
