@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     showLoadingState();
     try {
         await loadStockData();
+        filteredStocks = [...stockData];
         initializeFilters();
         displayStocks(stockData);
         displayRecommendations();

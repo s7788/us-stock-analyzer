@@ -7,7 +7,6 @@ const API_CONFIG = {
     STOCK_DATA_API: './data/stocks.json',
     
     // API settings
-    CACHE_DURATION: 5 * 60 * 1000, // 5 minutes cache
     TIMEOUT: 10000, // 10 seconds timeout
     
     // Fallback to mock data if API fails
