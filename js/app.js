@@ -4,7 +4,7 @@
 let stockData = [];
 
 // Global state
-let filteredStocks = [...stockData];
+let filteredStocks = [];
 
 // Price level text mapping
 const PRICE_LEVEL_TEXT = {
@@ -16,9 +16,15 @@ const PRICE_LEVEL_TEXT = {
 // Load stock data from API
 async function loadStockData() {
     try {
+        // Create AbortController for timeout
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), API_CONFIG.TIMEOUT);
+        
         const response = await fetch(API_CONFIG.STOCK_DATA_API, {
-            timeout: API_CONFIG.TIMEOUT
+            signal: controller.signal
         });
+        
+        clearTimeout(timeoutId);
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
